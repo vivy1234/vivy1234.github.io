@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title> version 3 Korea</title>
+            <!--<link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">-->
+            <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+   
+    <style>
+        /*styling*/
+        body{
+            background-color: rgb(255,255,255);
+            font-family: /*'News Cycle', sans-serif;*/'Gaegu', cursive;
+            font-size: 100%;
+        }
+        .mainbox{
+            background-color: rgb(230,230,250);
+            max-width: 1000px;
+            margin: auto;
+            width: 100%;
+            padding-bottom: 2em;
+        }
+        .my-gallery{
+            overflow: hidden;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+        }
+        p{
+            max-width: 850px;
+            margin: auto;
+            line-height: 25px;
+        }
+        img{
+            margin: auto;
+        }
+        .Header{
+            margin: auto;
+            text-align: center;
+            padding: 0px;
+            font-family: 'Abril Fatface', cursive;
+            /*background-color: rgb(230,230,250);*/
+            border: 0px solid blue;
+            margin-top: 75px;
+        }
+        h3{
+            text-align: center;
+            line-height: 30px;
+        }
+        h2{
+            text-align: center;
+            line-height: 30px;
+        }
+        .intro{
+            background-color: rgb(224,255,255);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        /*navigation bar styling*/
+        .nav{
+            background-color: rgb(255,250,205);
+            line-height: 50px;
+            position: fixed;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+        .nav li{
+            display: inline;
+            float: left;
+        }
+        .nav li a{
+            padding-right: 10px;
+            padding-left: 5px;
+            margin-left: 5px;
+            text-align: center;
+            display: block;
+        }
+        a:link{
+            text-decoration: none;
+            background-color: rgb(255,250,205);
+            color: rgb(0,0,0);
+            padding: 3px;
+            display: inline-block;
+            margin: 5px;
+        }
+        a:visited{
+            background-color: rgb(255,250,205);
+        }
+        a:hover{
+            background-color: rgb(255,218,185);
+        }
+        /*button in the footer*/
+        button{
+            background-color: rgb(250,250,210);
+        }
+        .img-responsive{
+           max-width: 100%;
+           
+        }
+        p{
+            width: 105%;
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+        /*column are mostly use for arranging text*/
+        .col{
+            box-sizing: border-box;
+                /*border: 1px solid green;*/
+            width:20%;
+            float: left;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            /*border: 0px makes the border disapppear*/
+            border: 0px solid pink;
+        }
+        .col2{
+            box-sizing: border-box;
+            width: 35%;
+            float: inherit;
+            border: 0px solid purple;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        .col2L{
+            box-sizing: border-box;
+            width: 35%;
+            float: right;
+            border: 0px solid white;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        /*colf = footer's column*/
+        .colf{
+            box-sizing: border-box;
+            width:20%;
+            float: left;
+            border: 0px solid white;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        /* comment */
+        .colf2{
+            box-sizing: border-box;
+            width:20%;
+            float: left;
+            border: 0px solid white;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        .colf3{
+            box-sizing: border-box;
+            width:20%;
+            float: left;
+            border: 0px solid white;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        .colf4{
+            box-sizing: border-box;
+            width:20%;
+            float: left;
+            border: 0px solid white;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        .colf5{
+            box-sizing: border-box;
+            width:20%;
+            float: left;
+            border: 0px solid white;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        .text{
+            box-sizing: border-box;
+            width: 60%;
+            float: right;
+            padding-right: 2%;
+            padding-left: 2%;
+            border: 0px solid blue;
+            overflow: scroll;
+            margin-right: 2%;
+        }
+        .pic{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        h4{
+            text-align: center;
+        }
+        .footer{
+            background-color: rgb(224,255,255);
+            height: 250px;
+            padding-bottom: 50px;
+        }
+        
+        hr{
+            border: 0px solid pink;
+        }
+        </style>
+     </head>
+    <body>
+<!-- comment -->
+    <div class="Header">
+        <img class="img-responsive" src="images/header2-new_size.jpg" alt="'Seoul'">
+        </div>
+    <div class="container">  
+        <ul class="nav">
+        <li><a href="#myng">Myeongdong</a></li>
+        <li><a href="#shop">Shopping</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#Places">Place</a></li>
+        </ul>
+        </div>  
+    <div class="intro">
+        <h3>At the start of January, I went to South Korea with my mother and younger sister. We went to Seoul which is the capital city of South Korea. We were only there for four days but we used all our time wisely. We mostly traveled by underground train and walking. We decided to not go too far from Myeongdong since that would take up too much time. The last thing you should know about my trip to South Korea is we went there to shop.</h3>
+        </div>
+        
+    <div class="mainbox" >
+        
+        <h2 id="myng">Myeongdong</h2>
+        <div class="pic"> 
+        <!-- every image have alternative text-->
+        <img class="img-responsive" src="images/myeongdong.jpg" alt="Myeongdong at night">
+            </div>  
+        <!-- After image there is a paragraph, same layout for every main box-->
+        <p>Myeongdong is one of the biggest shopping in Seoul. You can find a lot of clothing and beauty brands. Myeongdong also has great street food you can find along the street. People tend to go there during the late evening until night time. I would recommend going there if you want to buy any beauty products or clothing.</p>
+        <p>Myeong-dong is one of the primary shopping districts in Seoul. The two main streets meet in the center of the block with one beginning from Myeong-dong Subway Station (Seoul Subway Line No. 4) and the other from Lotte Department Store at Euljiro. Many brand name shops and department stores line the streets and alleys. Common products for sale include clothes, shoes, and accessories.</p>
+        </div>
+        
+    <div class="mainbox" >
+        <h2  id="shop">Shopping</h2>
+        <div class="pic">
+        <img class="img-responsive" src="images/shopping.jpg" alt="stuff I bought">
+        </div>
+        <p>South Korea is known for its beauty industries especially plastic surgery. A lot of people go there just to get their nose job. Even though I am not interested in plastic surgery but I bought some skincare back. As you can see from the photo, I bought a few face mask back. The brand called 'Fila' is very famous in South Korea and other Asian countries. If you need any type of skincare, you would find all you need in South Korea.</p>
+        <p>Myeongdong always belong to top places to visit in South Korea for its abundant shopping supplies and aesthetic surrounding. Although so many skin care and beauty stores stand on Myeongdong street, offering both cheap and expensive products, each of them has their own outstanding brand names and good quality products.
+
+        Some skincare brand names you can find here: Laneige, Skin food, IOPE, Innisfree, Stylenanda 3CE, Olive Young, Boots, Aritaum, Nature Republic, Primera, Etude House.
+
+        For more premium brands such as Sulwhasoo, History of Whoo, Hera, Amore Pacific, your best choice is the Lotte Department Store.</p>
+        </div>
+        
+    <div class="mainbox" >
+        <h2 id="food">Korean food</h2>
+        <div class="pic">
+        <img class="img-responsive" src="images/tteok.jpg" alt="Tteok (Korean food)">
+        </div>
+        <p>From meat grilled on the table before you, to boiling hot stews, to chilies and pickles, Korean food is almost impossible not to fall in love with.</p>
+        <p>South Korea is not only known for its beauty industries but its food is also delicious. In the photo above is Korea food called Tteokbokki also known as rice cake. It is a sticky, chewy and yummy snack. You need to try this or else they say you haven't been to Korea yet. Another thing you have to try in Korea is Kimchi. Kimchi is a fermented vegetable dish. Koreans normally have it as a side dish with porridge, noodles or soup. Korean food is a must try!</p>
+        </div> 
+         <hr>
+    <div class="mainbox">
+        <h2 id="Places">Places</h2>
+        <h3>O'sulloc Tea house</h3>
+        <div class="col text">
+            <p>O'sulloc Tea House is a popular Korean green tea cafe located in Myeongdong, Seoul. The O’Sulloc brand has much developed and modernized, being one of the major tea exporters from Korea, known for using technology for planting, producing and packaging. They serve both drinks and bakeries. Drink wise, they are well known for the Osulloc Green tea Latte, Jeju Tangerine Milk tea, and Apple Honey Tea Latte.</p>
+            
+            <p>They are also known for their Green Tea Roll and Green Tea Tiramisu. I tried their Charcoal Green Tea Roll but the texture was as soft and fluffy as I expected. Their teas are well blended and unique, every combination is combined perfectly. They have a bar with four different types of tea for the customer to try them, just like T2. O'sulloc tea House is a must for tea lovers.</p></div>
+        <div class="col2">
+        <img class="img-responsive" src="images/tea.jpg" alt="different type of tea to try">
+            </div>
+        <h3>Kakao Friend Cafe</h3>
+        <div class="col text">
+            <p>Kakao Ryan Cafe is located in Hongdae, Seoul. Kakao Talk is a famous texting application in South Korea, Ryan is one of their main mascots. Ryan Cafe is one of the features inside this three-story building. Inside the building on the first and second floor, they sell Kakao theme stuff. Most of them are very cute and affordable. Ryan Cafe is located on the third floor. As you could tell from the name, they sell Kakao theme desserts and drinks. </p>
+            <p>It's not only a great place to take photos and buy some cute things but also a great place to relax. It might be hard to find sits in the cafe during the weekends. Also besides the Kakao friend building, there is even a Kakao talk museum. It is free, so why not. There are some activities for you to enjoy. Both Kakao Friend and Kakao Talk museum is such a great place to take photos. No wonder why I spend hours in there.</p>
+            </div>
+        <div class="col2">
+        <img class="img-responsive" src="images/kakaof.jpg" alt="kakao cafe building">
+            </div>
+        <h3>Sinseon Seolleongtang</h3>
+        <div class="col text">
+        <p>Sinseon Seolleongtang is well known for their ox bone soup. Just like Western people who eat either, toast, cereal or pancake for breakfast, for Korean one of their breakfast menu is porridge. Sellengtang is very famous at making ox-bone soup. It is a chain store that branches all over South Korea but the Myeongdong branch is particularly famous and well known among Japanese tourists. Seolleongtang or ox-bone soup is made of simmering ox bones, intestine and shank for several hours until the broth becomes rich and creamy white. When it is eaten with rice, kimchi, and other side dishes, I would say it is one of the best meals that I have eaten. In the restaurant, there are multiple Korean means the restaurant is native approve. There was also a queue but it wasn't too long but I would say it is definitely worth it.</p>
+            </div>
+        <div class="col2">
+        <img class="img-responsive" src="images/porridge-shop.jpg" alt="Sinseon Seolleongtang shop">
+        </div>
+        <h3>James Cheese Back Ribs</h3>
+        <div class="col text">
+            <p>James Cheese Back Rib is very famous because of its Cheese Deung Galbi. There are a couple of braches around Seoul but we decided to go to the Myeongdong one because our hotel is in Myeongdong. It is quite hard to spot the entrance because it's a very thin stair up. Inside it is quite crowded and small. It is not the best dining place you are looking for if you wanted a relaxing place to sit. The noise inside is very loud because there is no noise ventilation but the food is quite decent. Their menu is very simple and straight forward. The price is not bad comparing to the amount you get.</p>
+            <p>We ordered their famous Cheese Galbi. They give you lots of cheese and back ribs. You could choose your spicy level and side dishes. The best part is to watch the server to help you cook the cheese. They curl the cheese around the back rib and PAM PAM  ready for you to enjoy. The rib itself is not as juicy as I expected but  with the cheese it's DELICIOUS.</p>
+        </div>
+        <div class="col2">
+        <img class="img-responsive" src="images/cheese_meat2.jpg" alt="Cheese Galbi">
+        </div>
+        </div>
+        <hr>
+        <div class="mainbox  my-gallery">
+        <h2>Gallery</h2>
+        <!-- gallery with alternative text-->
+        <div class="col">
+            <img class="img-responsive" src="images/ricebox.jpg" alt="ordinary korean lunch">
+            <h3>Korean lunch</h3>
+                </div>
+        <div class="col">
+            <img class="img-responsive" src="images/ice_cream.jpg" alt="32 cm ice cream">
+            <h3>32cm Ice cream</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/banana_icec.jpg" alt="Banana flavoured ice cream">
+            <h3>Banana Ica cream</h3>
+                </div>
+        <div class="col">
+            <img class="img-responsive" src="images/cheese.jpg" alt=" grilled seafood with cheese">
+            <h3>Grilled cheese over scallop</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/porridge.jpg" alt="Sinseon Seolleongtang beef porridge">
+            <h3>Porridge beef favoureds</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/cheese_meat.jpg" alt="Cheese calbi">
+            <h3>Cheese Calbi</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/tteok.jpg" alt="Tteol with sausage on a stick">
+            <h3>Tteok / Rice cake</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/kakao_cafe.jpg" alt="Kakao cafe cupcakes">
+            <h3>Kakao cafe</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/myeongdong.jpg" alt="Myeongdong at night">
+            <h3>Myeongdong at night</h3>
+                </div>
+        <div class="col">
+             <img class="img-responsive" src="images/grilled_meat.jpg" alt="Meat grilled on hot stones">
+            <h3>Grilled meat on hot stones</h3>
+                </div>
+            </div>
+             
+       <div class="mainbox">
+        <h2 id="map">Map</h2>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QRKc6GKDdx_Y0tHs2HjVZZJ0_0bKVA83" width="640" height="480"></iframe>
+            </div>
+        
+    <div class="footer">
+        <!--have useful external link for the user-->
+        <h4>&copy; Vivy Chanpaiboonrat 2019</h4>
+        <div class="colf">
+        <h4>Expore Seoul</h4>
+        <div class="button">
+            <a href="https://www.tripadvisor.co.nz/Attractions-g294197-Activities-Seoul.html">15 thing to do in seoul</a>
+        </div>
+        <div class="button">
+            <a href="https://www.tripsavvy.com/food-you-need-to-try-in-seoul-south-korea-4143247"> 12 Must try korean food</a>
+        </div>
+            <div class="button">
+                <a href="https://www.tripzilla.com/underground-shopping-malls-korea/73716">Underground mall like u've never seen</a>
+            </div>
+        </div>
+        <div class="colf2">
+            <h4>Essential knowledge</h4>
+            <div class="button">
+            <a href="https://thearrivalstore.com/15-korean-phrases-learn-first/">Learn some phases</a>
+            </div>
+            <div class="button">
+            <a href="https://theasianlife.com/asiablog/20-things-you-must-know-about-korean-culture-13807.html">korean culture</a>
+            </div>
+            <div class="button">
+            <a href="https://www.travelvui.com/south-korea/seoul/best-ways-to-get-around-in-seoul/">transportation</a>
+            </div>
+            </div>
+        <div class="colf3">
+            <h4>Things to buy</h4>
+            <div class="button">
+            <a href="https://blog.trazy.com/top-20-things-to-buy-in-seoul-to-take-home/">Souvenir for people back home</a>
+            </div>
+            <div class="button">
+            <a href="https://www.dailydot.com/bazaar/korean-skincare-brands/">skin care product</a>
+            </div>
+            <div class="button">
+            <a href="https://www.klook.com/blog/en-sg/korean-snacks-korea/">korean snacks</a>
+            </div>
+        </div>
+        <div class="colf4">
+            <h4>Places to go</h4>
+            <div class="button">
+            <a href="https://theculturetrip.com/asia/south-korea/articles/20-must-visit-attractions-in-seoul/">places to visit</a>
+            </div>
+            <div class="button">
+            <a href="https://www.koreatraveleasy.com/2018/07/03/the-prettiest-places-to-see-around-seoul-nature-gardens-colorful-villages-and-more/">nature travel</a>
+            </div>
+            <div class="button">
+            <a href="https://nz.hotels.com/go/south-korea/best-seoul-shopping">17 places to shop</a>
+            </div>
+        </div>
+        <div class="colf5">
+            <h4>Outside Seoul</h4>
+            <div class="button">
+            <a href="https://www.treksplorer.com/day-trips-from-seoul-korea/">A day trip from Seoul</a>
+            </div>
+            <div class="button">
+            <a href="https://www.boboandchichi.com/2015/11/best-things-to-do-in-korea-27-weekend-trips/">where to go outside Seoul</a>
+            </div>
+            <div class="button">
+            <a href="https://sophiemos.com/new-unique-places-to-visit-in-south-korea-outside-of-seoul-part-i/">unique places outside Seoul</a>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
